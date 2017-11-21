@@ -6,4 +6,9 @@ public interface Vehicle {
 	   //추상 매서드[abstract] 생략가능
 	      
 	   public abstract void run();
+	   
+	   //update
+	   default void electCharge() {
+		   System.out.println("충전 중입니다.");
+	   }
 }
